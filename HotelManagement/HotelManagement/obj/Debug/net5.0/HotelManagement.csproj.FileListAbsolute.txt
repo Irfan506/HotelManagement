@@ -1,0 +1,9 @@
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\net5.0\HotelManagement.csprojAssemblyReference.cache
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\net5.0\HotelManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\net5.0\HotelManagement.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\net5.0\HotelManagement.AssemblyInfo.cs
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\net5.0\HotelManagement.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\net5.0\HotelManagement.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\net5.0\HotelManagement.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\net5.0\HotelManagement.RazorAssemblyInfo.cache
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\net5.0\HotelManagement.RazorAssemblyInfo.cs

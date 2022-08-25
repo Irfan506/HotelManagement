@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Common\obj\Debug\net5.0\HotelManagement.Common.csprojAssemblyReference.cache
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Common\obj\Debug\net5.0\HotelManagement.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Common\obj\Debug\net5.0\HotelManagement.Common.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Common\obj\Debug\net5.0\HotelManagement.Common.AssemblyInfo.cs
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Common\obj\Debug\net5.0\HotelManagement.Common.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Common\bin\Debug\net5.0\HotelManagement.Common.deps.json
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Common\bin\Debug\net5.0\HotelManagement.Common.dll
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Common\bin\Debug\net5.0\ref\HotelManagement.Common.dll
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Common\bin\Debug\net5.0\HotelManagement.Common.pdb
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Common\obj\Debug\net5.0\HotelManagement.Common.dll
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Common\obj\Debug\net5.0\ref\HotelManagement.Common.dll
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Common\obj\Debug\net5.0\HotelManagement.Common.pdb

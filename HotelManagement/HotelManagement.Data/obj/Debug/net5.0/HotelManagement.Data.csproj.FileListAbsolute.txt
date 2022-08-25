@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Data\bin\Debug\net5.0\HotelManagement.Data.deps.json
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Data\bin\Debug\net5.0\HotelManagement.Data.dll
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Data\bin\Debug\net5.0\ref\HotelManagement.Data.dll
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Data\bin\Debug\net5.0\HotelManagement.Data.pdb
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Data\obj\Debug\net5.0\HotelManagement.Data.csprojAssemblyReference.cache
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Data\obj\Debug\net5.0\HotelManagement.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Data\obj\Debug\net5.0\HotelManagement.Data.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Data\obj\Debug\net5.0\HotelManagement.Data.AssemblyInfo.cs
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Data\obj\Debug\net5.0\HotelManagement.Data.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Data\obj\Debug\net5.0\HotelManagement.Data.dll
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Data\obj\Debug\net5.0\ref\HotelManagement.Data.dll
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Data\obj\Debug\net5.0\HotelManagement.Data.pdb
