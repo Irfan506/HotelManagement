@@ -1,0 +1,17 @@
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\bin\Debug\net5.0\HotelManagement.Training.deps.json
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\bin\Debug\net5.0\HotelManagement.Training.dll
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\bin\Debug\net5.0\ref\HotelManagement.Training.dll
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\bin\Debug\net5.0\HotelManagement.Training.pdb
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\bin\Debug\net5.0\HotelManagement.Data.dll
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\bin\Debug\net5.0\HotelManagement.Data.pdb
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\obj\Debug\net5.0\HotelManagement.Training.csprojAssemblyReference.cache
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\obj\Debug\net5.0\HotelManagement.Training.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\obj\Debug\net5.0\HotelManagement.Training.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\obj\Debug\net5.0\HotelManagement.Training.AssemblyInfo.cs
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\obj\Debug\net5.0\HotelManagement.Training.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\obj\Debug\net5.0\HotelManagement.Training.csproj.CopyComplete
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\obj\Debug\net5.0\HotelManagement.Training.dll
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\obj\Debug\net5.0\ref\HotelManagement.Training.dll
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\obj\Debug\net5.0\HotelManagement.Training.pdb
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\bin\Debug\net5.0\HotelManagement.Common.dll
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement.Training\bin\Debug\net5.0\HotelManagement.Common.pdb

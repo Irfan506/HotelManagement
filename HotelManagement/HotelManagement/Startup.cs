@@ -1,6 +1,7 @@
 using Autofac;
 using HotelManagement.Data;
 using HotelManagement.Models;
+using HotelManagement.Training;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -39,8 +40,6 @@ namespace HotelManagement
         {
             var connectionInfo = GetConnectionStringAndAssemblyName();
 
-            builder.RegisterModule(new TrainingModule(connectionInfo.connectionString,
-                connectionInfo.migrationAssemblyName));
 
 
             builder.RegisterModule(new WebModule());
