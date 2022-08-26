@@ -1,7 +1,10 @@
 using Autofac;
+using Autofac.Extensions.DependencyInjection;
+using HotelManagement.Common;
 using HotelManagement.Data;
 using HotelManagement.Models;
 using HotelManagement.Training;
+using HotelManagement.Training.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -40,7 +43,10 @@ namespace HotelManagement
         {
             var connectionInfo = GetConnectionStringAndAssemblyName();
 
+            builder.RegisterModule(new TrainingModule(connectionInfo.connectionString,
+                connectionInfo.migrationAssemblyName));
 
+            builder.RegisterModule(new CommonModule());
 
             builder.RegisterModule(new WebModule());
         }
@@ -62,6 +68,10 @@ namespace HotelManagement
 
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(connectionInfo.connectionString));
+
+            services.AddDbContext<TrainingContext>(options =>
+            options.UseSqlServer(connectionInfo.connectionString,
+            b => b.MigrationsAssembly(connectionInfo.migrationAssemblyName)));
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
@@ -86,6 +96,7 @@ namespace HotelManagement
 
 
             services.Configure<SmtpConfiguration>(Configuration.GetSection("Smtp"));
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddControllersWithViews();
             services.AddHttpContextAccessor();
             services.AddRazorPages();
@@ -96,6 +107,9 @@ namespace HotelManagement
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+            AutofacContainer = app.ApplicationServices.GetAutofacRoot();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

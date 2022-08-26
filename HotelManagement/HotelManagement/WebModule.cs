@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using HotelManagement.Areas.Admin.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace HotelManagement
     {
         protected override void Load(ContainerBuilder builder)
         {
-
+            builder.RegisterType<RoomListModel>().AsSelf();
             base.Load(builder);
         }
     }
