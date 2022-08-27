@@ -9,6 +9,7 @@ namespace HotelManagement.Training.BusinessObjects
     public class Booking
     {
         public int Id { get; set; }
+        public int UserId { get; set; }
         public string BDate { get; set; }
         public string BRoom { get; set; }
         public string CheckIn { get; set; }

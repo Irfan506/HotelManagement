@@ -79,7 +79,7 @@ namespace HotelManagement.Areas.Admin.Controllers
         }
 
         [HttpPost, ValidateAntiForgeryToken]
-        public IActionResult Edit(EditRoomModel model)
+        public IActionResult EditRoom(EditRoomModel model)
         {
             if (ModelState.IsValid)
             {
@@ -99,11 +99,23 @@ namespace HotelManagement.Areas.Admin.Controllers
             return RedirectToAction(nameof(ManageRoom));
 
         }
-        
 
 
 
 
+        public IActionResult ManageUser()
+        {
+            ViewBag.SomeData = "Hello From Asp.Net";
+            var model = new UserListModel();
+            return View(model);
+        }
+        public JsonResult GetUserData()
+        {
+            var dataTablesModel = new DataTablesAjaxRequestModel(Request);
+            var model = new UserListModel();
+            var data = model.GetUsers(dataTablesModel);
+            return Json(data);
+        }
         public IActionResult AddUser()
         {
             var model = new AddUserModel();
@@ -127,6 +139,105 @@ namespace HotelManagement.Areas.Admin.Controllers
 
             }
             return View(model);
+        }
+        public IActionResult EditUser(int id)
+        {
+            var model = new EditUserModel();
+            model.LoadModelData(id);
+            return View(model);
+        }
+
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult EditUser(EditUserModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                model.Update();
+            }
+
+            return View(model);
+        }
+
+        [HttpPost, ValidateAntiForgeryToken]
+
+        public IActionResult DeleteUser(int id)
+        {
+            var model = new UserListModel();
+            model.Delete(id);
+
+            return RedirectToAction(nameof(ManageUser));
+
+        }
+
+
+
+
+
+
+        public IActionResult ManageBooking()
+        {
+            ViewBag.SomeData = "Hello From Asp.Net";
+            var model = new BookingListModel();
+            return View(model);
+        }
+        public JsonResult GetBookingData()
+        {
+            var dataTablesModel = new DataTablesAjaxRequestModel(Request);
+            var model = new BookingListModel();
+            var data = model.GetBookings(dataTablesModel);
+            return Json(data);
+        }
+        public IActionResult AddBooking()
+        {
+            var model = new AddBookingModel();
+            return View(model);
+        }
+
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult AddBooking(AddBookingModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    model.AddBooking();
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", "Failed to Add Booking");
+                    _logger.LogError(ex, "Add booking Failed");
+                }
+
+            }
+            return View(model);
+        }
+        public IActionResult EditBooking(int id)
+        {
+            var model = new EditBookingModel();
+            model.LoadModelData(id);
+            return View(model);
+        }
+
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult EditBooking(EditBookingModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                model.Update();
+            }
+
+            return View(model);
+        }
+
+        [HttpPost, ValidateAntiForgeryToken]
+
+        public IActionResult DeleteBooking(int id)
+        {
+            var model = new BookingListModel();
+            model.Delete(id);
+
+            return RedirectToAction(nameof(ManageBooking));
+
         }
     }
 }

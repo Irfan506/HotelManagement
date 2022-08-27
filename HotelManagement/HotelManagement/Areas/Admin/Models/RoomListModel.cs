@@ -42,11 +42,13 @@ namespace HotelManagement.Areas.Admin.Models
                 data = (from record in data.records
                         select new string[]
                         {
+
                             record.Id.ToString(),
                             record.RName,
                             record.RLocation,
                             record.RCost,
-                            record.Status
+                            record.Status,
+                            record.Id.ToString(),
 
                         }
                         ).ToArray()

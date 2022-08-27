@@ -10,6 +10,7 @@ namespace HotelManagement.Training.Entities
     public class Booking : IEntity<int>
     {
         public int Id { get; set; }
+        public int UserId { get; set; }
         public string BDate { get; set; }
         public string BRoom { get; set; }
         public string CheckIn { get; set; }
