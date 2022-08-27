@@ -14,6 +14,7 @@ namespace HotelManagement.Profiles
         {
             CreateMap<AddRoomModel, Room>().ReverseMap();
             CreateMap<AddUserModel, User>().ReverseMap();
+            CreateMap<AddBookingModel, Booking>().ReverseMap();
         }
     }
 }

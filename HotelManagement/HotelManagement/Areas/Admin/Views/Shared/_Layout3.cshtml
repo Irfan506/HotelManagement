@@ -26,58 +26,29 @@
     @await RenderSectionAsync("styles", false)
 </head>
 <body>
-
-    <header class="site-header js-site-header">
+    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-6 col-lg-4 site-logo" data-aos="fade"><a href="index.html">Sogo Hotel</a></div>
-                <div class="col-6 col-lg-8">
-
-
-                    <div class="site-menu-toggle js-site-menu-toggle" data-aos="fade">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <!-- END menu-toggle -->
-
-                    <div class="site-navbar js-site-navbar">
-                        <nav role="navigation">
-                            <div class="container">
-                                <div class="row full-height align-items-center">
-                                    <div class="col-md-6 mx-auto">
-                                        <ul class="list-unstyled menu">
-                                            <li class="active"><a href="Index.cshtml">Home</a></li>
-                                            <li><a href="UserLogin">User</a></li>
-                                            <li><a href="Login">Admin</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home                    .</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ViewRoom">Room                        .</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AddBooking">Confirm Booking                           .</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index">Logout                           .</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
-    <!-- END head -->
-    <section class="site-hero overlay" style="background-image: url(/Index/images/hero_4.jpg)" data-stellar-background-ratio="0.5">
-        <div class="container">
-            <div class="row site-hero-inner justify-content-center align-items-center">
-                <div class="col-md-10 text-center" data-aos="fade-up">
-                    <span class="custom-caption text-uppercase text-white d-block  mb-3">Welcome To 5 <span class="fa fa-star text-primary"></span>   Hotel</span>
-                    <h1 class="heading">A Best Place To Stay</h1>
-                </div>
-            </div>
-        </div>
-
-        <a class="mouse smoothscroll" href="#next">
-            <div class="mouse-icon">
-                <span class="mouse-wheel"></span>
-            </div>
-        </a>
-    </section>
-
+    </nav>
     <div>
         @RenderBody()
     </div>
@@ -135,7 +106,37 @@
             </div>
         </div>
     </footer>
-
+    <!-- jQuery -->
+    <script src="/Admin/plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="/Admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Sparkline -->
+    <script src="/Admin/plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="/Admin/plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="/Admin/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="/Admin/plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="/Admin/plugins/moment/moment.min.js"></script>
+    <script src="/Admin/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="/Admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="/Admin/plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="/Admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/Admin/js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="/Admin/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="/Admin/js/pages/dashboard.js"></script>
+    <script src="/Admin/plugins/jquery-ui/jquery-ui.min.js"></script>
     <script src="/Index/js/jquery-3.3.1.min.js"></script>
     <script src="/Index/js/jquery-migrate-3.0.1.min.js"></script>
     <script src="/Index/js/popper.min.js"></script>

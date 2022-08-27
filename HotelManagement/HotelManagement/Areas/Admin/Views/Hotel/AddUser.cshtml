@@ -1,6 +1,7 @@
 ﻿@model AddUserModel
 @{
     ViewData["Title"] = "AddUser";
+    Layout = "~/Areas/Admin/Views/Shared/_layout2.cshtml";
 }
 <!-- Content Header (Page header) -->
 <section class="content-header">
@@ -22,7 +23,10 @@
 <section class="content">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-2 ">
+
+            </div>
+            <div class="col-md-8">
                 <div class="card card-info">
                     <div class="card-header">
                         <h3 class="card-title">Add A New User</h3>
@@ -73,7 +77,7 @@
                         <!-- /.card-body -->
                         <div class="card-footer">
                             <button type="submit" class="btn btn-info">Add</button>
-                            <a asp-action="DashBoard" asp-controller="Hotel"
+                            <a asp-action="Index" asp-controller="Hotel"
                                class="btn btn-default float-right">Cancel</a>
                         </div>
                         <!-- /.card-footer -->

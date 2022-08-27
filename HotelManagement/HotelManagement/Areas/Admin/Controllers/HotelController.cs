@@ -248,6 +248,10 @@ namespace HotelManagement.Areas.Admin.Controllers
 
 
 
+        public IActionResult UserLogin()
+        {
+            return View();
+        }
         public IActionResult ManageUser()
         {
             ViewBag.SomeData = "Hello From Asp.Net";
@@ -384,5 +388,15 @@ namespace HotelManagement.Areas.Admin.Controllers
             return RedirectToAction(nameof(ManageBooking));
 
         }
+
+        public IActionResult ViewRoom()
+        {
+            ViewBag.SomeData = "Hello From Asp.Net";
+            var model = new RoomListModel();
+            return View(model);
+        }
+
+
+
     }
 }

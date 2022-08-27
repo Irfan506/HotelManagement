@@ -76,3 +76,30 @@ System.InvalidOperationException: The model item passed into the ViewDataDiction
 2022-08-27 19:22:57.695 +06:00 [INF] User created a new account with password.
 2022-08-27 19:24:05.920 +06:00 [INF] User logged in.
 2022-08-27 19:24:41.558 +06:00 [INF] User logged in.
+2022-08-27 19:30:56.939 +06:00 [INF] Application Starting up
+2022-08-27 19:33:31.367 +06:00 [INF] Application Starting up
+2022-08-27 19:34:24.509 +06:00 [INF] Application Starting up
+2022-08-27 19:40:13.795 +06:00 [INF] Application Starting up
+2022-08-27 19:41:20.738 +06:00 [INF] Application Starting up
+2022-08-27 19:43:27.910 +06:00 [INF] Application Starting up
+2022-08-27 19:44:35.421 +06:00 [INF] Application Starting up
+2022-08-27 19:53:29.310 +06:00 [INF] Application Starting up
+2022-08-27 20:05:04.671 +06:00 [INF] Application Starting up
+2022-08-27 20:08:22.694 +06:00 [ERR] Add booking Failed
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+AddBookingModel -> Booking
+HotelManagement.Areas.Admin.Models.AddBookingModel -> HotelManagement.Training.BusinessObjects.Booking
+   at lambda_method624(Closure , Object , Booking , ResolutionContext )
+   at HotelManagement.Areas.Admin.Models.AddBookingModel.AddBooking() in C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\Areas\Admin\Models\AddBookingModel.cs:line 43
+   at HotelManagement.Areas.Admin.Controllers.HotelController.AddBooking(AddBookingModel model) in C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\Areas\Admin\Controllers\HotelController.cs:line 352
+2022-08-27 20:11:07.027 +06:00 [INF] Application Starting up
+2022-08-27 20:15:49.317 +06:00 [INF] Application Starting up
+2022-08-27 20:17:50.758 +06:00 [INF] Application Starting up
+2022-08-27 20:19:05.890 +06:00 [INF] Application Starting up
+2022-08-27 20:22:47.199 +06:00 [INF] Application Starting up
+2022-08-27 20:23:59.842 +06:00 [INF] Application Starting up
+2022-08-27 20:25:05.442 +06:00 [INF] Application Starting up
+2022-08-27 20:26:13.062 +06:00 [INF] Application Starting up
+2022-08-27 20:29:01.006 +06:00 [INF] Application Starting up
