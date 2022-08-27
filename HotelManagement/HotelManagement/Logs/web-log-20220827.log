@@ -103,3 +103,9 @@ HotelManagement.Areas.Admin.Models.AddBookingModel -> HotelManagement.Training.B
 2022-08-27 20:25:05.442 +06:00 [INF] Application Starting up
 2022-08-27 20:26:13.062 +06:00 [INF] Application Starting up
 2022-08-27 20:29:01.006 +06:00 [INF] Application Starting up
+2022-08-27 20:32:03.554 +06:00 [INF] Application Starting up
+2022-08-27 20:33:17.893 +06:00 [INF] User created a new account with password.
+2022-08-27 20:37:38.928 +06:00 [WRN] User cannot sign in without a confirmed account.
+2022-08-27 20:38:04.134 +06:00 [INF] User logged in.
+2022-08-27 20:39:11.743 +06:00 [INF] Application Starting up
+2022-08-27 20:45:52.939 +06:00 [INF] Application Starting up
