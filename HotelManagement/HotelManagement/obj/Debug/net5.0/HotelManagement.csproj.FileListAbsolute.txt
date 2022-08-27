@@ -470,3 +470,7 @@ C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManag
 C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\net5.0\Razor\Areas\Admin\Views\Hotel\ManageUser.cshtml.g.cs
 C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\net5.0\Razor\Areas\Admin\Views\Hotel\EditBooking.cshtml.g.cs
 C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\net5.0\Razor\Areas\Admin\Views\Hotel\ManageBooking.cshtml.g.cs
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\net5.0\Razor\Areas\Admin\Views\Hotel\Index.cshtml.g.cs
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_Layout2.cshtml.g.cs
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\net5.0\Razor\Areas\Admin\Views\Hotel\Login.cshtml.g.cs
+C:\Users\User\Desktop\HotelManagement\HotelManagement\HotelManagement\HotelManagement\obj\Debug\net5.0\Razor\Areas\Admin\Views\Hotel\Register.cshtml.g.cs

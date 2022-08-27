@@ -1,0 +1,78 @@
+2022-08-27 10:36:18.902 +06:00 [INF] Application Starting up
+2022-08-27 11:17:10.181 +06:00 [INF] Application Starting up
+2022-08-27 11:17:54.094 +06:00 [INF] Application Starting up
+2022-08-27 11:19:19.625 +06:00 [INF] Application Starting up
+2022-08-27 11:20:41.212 +06:00 [INF] Application Starting up
+2022-08-27 11:23:16.180 +06:00 [INF] Application Starting up
+2022-08-27 11:23:26.102 +06:00 [INF] Application Starting up
+2022-08-27 11:31:04.751 +06:00 [INF] Application Starting up
+2022-08-27 11:41:04.256 +06:00 [INF] Application Starting up
+2022-08-27 11:43:36.058 +06:00 [INF] Application Starting up
+2022-08-27 11:51:37.184 +06:00 [INF] Application Starting up
+2022-08-27 11:54:07.613 +06:00 [INF] Application Starting up
+2022-08-27 11:55:15.220 +06:00 [INF] Application Starting up
+2022-08-27 12:32:38.008 +06:00 [INF] Application Starting up
+2022-08-27 12:34:02.472 +06:00 [INF] Application Starting up
+2022-08-27 12:49:07.822 +06:00 [INF] Application Starting up
+2022-08-27 12:50:14.843 +06:00 [INF] Application Starting up
+2022-08-27 12:52:23.947 +06:00 [INF] Application Starting up
+2022-08-27 12:53:35.921 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'HotelManagement.Areas.Admin.Models.EditRoomModel', but this ViewDataDictionary instance requires a model item of type 'HotelManagement.Areas.Admin.Models.EditUserModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method662(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-08-27 12:54:53.135 +06:00 [INF] Application Starting up
+2022-08-27 12:56:24.327 +06:00 [INF] Application Starting up
+2022-08-27 12:57:53.427 +06:00 [INF] Application Starting up
+2022-08-27 13:06:11.718 +06:00 [INF] Application Starting up
+2022-08-27 13:06:46.987 +06:00 [INF] Application Starting up
+2022-08-27 13:08:46.548 +06:00 [INF] Application Starting up
+2022-08-27 13:23:27.758 +06:00 [INF] Application Starting up
+2022-08-27 13:26:13.240 +06:00 [INF] Application Starting up
+2022-08-27 13:27:08.781 +06:00 [INF] Application Starting up
+2022-08-27 13:31:11.876 +06:00 [INF] Application Starting up
+2022-08-27 13:33:23.026 +06:00 [INF] Application Starting up
+2022-08-27 13:34:22.483 +06:00 [INF] Application Starting up
+2022-08-27 13:36:11.868 +06:00 [INF] Application Starting up
+2022-08-27 18:59:44.985 +06:00 [INF] Application Starting up
+2022-08-27 19:00:32.769 +06:00 [INF] Application Starting up
+2022-08-27 19:01:03.279 +06:00 [INF] Application Starting up
+2022-08-27 19:04:40.852 +06:00 [INF] Application Starting up
+2022-08-27 19:05:47.656 +06:00 [INF] Application Starting up
+2022-08-27 19:14:24.684 +06:00 [INF] Application Starting up
+2022-08-27 19:16:04.471 +06:00 [INF] Application Starting up
+2022-08-27 19:19:12.000 +06:00 [INF] Application Starting up
+2022-08-27 19:21:06.323 +06:00 [INF] Application Starting up
+2022-08-27 19:22:27.571 +06:00 [INF] Application Starting up
+2022-08-27 19:22:57.695 +06:00 [INF] User created a new account with password.
+2022-08-27 19:24:05.920 +06:00 [INF] User logged in.
+2022-08-27 19:24:41.558 +06:00 [INF] User logged in.
