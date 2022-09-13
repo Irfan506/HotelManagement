@@ -1,11 +1,13 @@
 ﻿using HotelManagement.Areas.Admin.Models;
 using HotelManagement.Areas.Admin.Models.Account;
 using HotelManagement.Common.Utilities;
+using HotelManagement.Training.BusinessObjects;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -23,16 +25,19 @@ namespace HotelManagement.Areas.Admin.Controllers
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<HotelController> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly SignInManager<IdentityUser> _userSignIn;
         public HotelController(
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager,
             ILogger<HotelController> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            SignInManager<IdentityUser> userSignIn)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _userSignIn = userSignIn;
         }
 
         public async Task<IActionResult> Register(string returnUrl = null)
@@ -246,12 +251,40 @@ namespace HotelManagement.Areas.Admin.Controllers
         }
 
 
+        SqlConnection con = new SqlConnection();
+        SqlCommand com = new SqlCommand();
+        SqlDataReader dr;
 
-
-        public IActionResult UserLogin()
+        [HttpGet]
+        public ActionResult UserLogin()
         {
             return View();
         }
+        void connetionString()
+        {
+            con.ConnectionString = "Server=DESKTOP-17QPMKC\\SQLEXPRESS;Database=HotelManagement; User Id=HotelManagement; Password =tanaji;";
+        }
+        [HttpPost]
+        public ActionResult Verify(UserLoginModel acc)
+        {
+            connetionString();
+            con.Open();
+            com.Connection = con;
+            com.CommandText = "select * from Users where UEmail='"+acc.UEmail+"' and UPass= '"+acc.UPass+"'";
+            dr = com.ExecuteReader();
+            if(dr.Read())
+            {
+                con.Close();
+                return View("AddBooking");
+            }
+            else
+            {
+                con.Close();
+                return View("Index");
+            }
+            
+        }
+        
         public IActionResult ManageUser()
         {
             ViewBag.SomeData = "Hello From Asp.Net";
