@@ -51,6 +51,8 @@ namespace HotelManagement.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("Bookings");
                 });
 
