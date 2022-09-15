@@ -1,0 +1,13 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor Accessor
+@{
+    ViewBag.Title = "Welcome";
+    Layout = "~/Areas/Admin/Views/Shared/_layout3.cshtml";
+
+}
+
+<h2>welcome @Accessor.HttpContext.Session.GetString("emailid")</h2>
+<h2>@Html.ViewData["username"]</h2>
+<h2>@Html.ViewData["userAddress"]</h2>
+
+

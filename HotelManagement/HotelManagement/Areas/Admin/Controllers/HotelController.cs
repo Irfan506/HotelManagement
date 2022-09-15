@@ -3,6 +3,7 @@ using HotelManagement.Areas.Admin.Models.Account;
 using HotelManagement.Common.Utilities;
 using HotelManagement.Training.BusinessObjects;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -184,6 +185,7 @@ namespace HotelManagement.Areas.Admin.Controllers
             return View();
         }
 
+
         public IActionResult ManageRoom()
         {
             ViewBag.SomeData = "Hello From Asp.Net";
@@ -264,6 +266,7 @@ namespace HotelManagement.Areas.Admin.Controllers
         {
             con.ConnectionString = "Server=DESKTOP-17QPMKC\\SQLEXPRESS;Database=HotelManagement; User Id=HotelManagement; Password =tanaji;";
         }
+        const string Setstring = "emailid";
         [HttpPost]
         public ActionResult Verify(UserLoginModel acc)
         {
@@ -274,15 +277,37 @@ namespace HotelManagement.Areas.Admin.Controllers
             dr = com.ExecuteReader();
             if(dr.Read())
             {
+                
+                HttpContext.Session.SetString(Setstring, acc.UEmail.ToString());
                 con.Close();
-                return View("AddBooking");
+                return RedirectToAction("UserProfile", "Hotel");
             }
             else
-            {
+            { 
                 con.Close();
                 return View("Index");
             }
             
+        }
+        public ActionResult UserProfile()
+        {
+            var display = HttpContext.Session.GetString(Setstring);
+            connetionString();
+            con.Open();
+            com.Connection = con;
+            com.CommandText = "select * from Users where UEmail='" + display + "' ";
+            dr = com.ExecuteReader();
+            if(dr.Read())
+            {
+                string name = dr["UName"].ToString();
+                string address = dr["UAddress"].ToString();
+                ViewData["username"] = name;
+                ViewData["userAddress"] = address;
+
+            }
+            con.Close();
+            return View();
+
         }
         
         public IActionResult ManageUser()
